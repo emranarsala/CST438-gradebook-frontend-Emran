@@ -78,16 +78,14 @@ class AddAssignment extends React.Component {
     render() {
         return (
             <div>
-                
-                
-                    <DialogTitle>Add Assignment</DialogTitle>
-                    <DialogContent style={{paddingTop: 20}}>
+                    
+                    <h2>Add Assignment</h2>                   
                         <TextField autoFocus label="Course Id" name="courseId" onChange={this.setCourseId}/>
                         <TextField label="Name" name="name" onChange={this.setAssignmentName} />                   
-                        <TextField label="Due Date" name="duedate"  onChange={this.setDueDate}/>
-                    </DialogContent>
-                           
-                    <Button id="Add"  component={Link} to={{pathname:'/'}} variant="outlined" style={{margin: 10}} color="primary" onClick= {this.setAdd}>Add</Button>
+                        <TextField label="Due Date" name="duedate"  onChange={this.setDueDate}/>   
+                    <br></br>     
+                    <Button id="Add"  component={Link} to={{pathname:'/'}} variant="outlined" style={{margin: 20}} color="primary" onClick= {this.setAdd}>
+                        Add Assignment</Button>
                     
                     <Button component={Link} to={{pathname:'/'}} 
                     variant="outlined" color="primary" style={{margin: 10}}>
